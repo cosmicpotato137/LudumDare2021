@@ -4,25 +4,46 @@ using UnityEngine;
 
 public class GameControler : MonoBehaviour
 {
-    public bool mRunning;
+    public GameObject pauseMenu;
+
+    bool pause = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        mRunning = true;   
+        Continue();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (!mRunning)
-            Quit();
-
-
+        if (!pause && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
+        else if (pause && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Continue();
+        }
     }
 
-    void Quit()
+    public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0.0f;
+        pauseMenu.SetActive(true);
+        pause = true;
+    }
+
+    public void Continue()
+    {
+        Time.timeScale = 1.0f;
+        pauseMenu.SetActive(false);
+        pause = false;
     }
 }

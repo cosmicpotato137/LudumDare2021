@@ -5,15 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuControler : MonoBehaviour
 {
+    public bool showOptions;
+    public GameObject optionsMenu;
+    public GameObject mainMenu;
+
 
     private void Start()
     {
-        
+        ExitOptions();
     }
 
     private void Update()
     {
-        
     }
 
     public void PlayGame()
@@ -24,5 +27,19 @@ public class MainMenuControler : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Options()
+    {
+        showOptions = true;
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+
+    public void ExitOptions()
+    {
+        showOptions = false;
+        optionsMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }
