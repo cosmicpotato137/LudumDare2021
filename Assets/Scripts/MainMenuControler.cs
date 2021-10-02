@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuControler : MonoBehaviour
 {
-    public bool showOptions;
     public GameObject optionsMenu;
     public GameObject mainMenu;
 
+    bool showOptions;
 
     private void Start()
     {
@@ -17,6 +17,20 @@ public class MainMenuControler : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (showOptions)
+            {
+                ExitOptions();
+                showOptions = false;
+            }
+            else
+            {
+                Options();
+                showOptions = true;
+            }
+        }
+
     }
 
     public void PlayGame()

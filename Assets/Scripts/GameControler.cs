@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControler : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
 
-    bool pause = true;
+    bool pause = false;
+    bool options = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        ExitOptions();
         Continue();
     }
 
@@ -18,13 +22,14 @@ public class GameControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pause && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
-        }
-        else if (pause && Input.GetKeyDown(KeyCode.Escape))
-        {
-            Continue();
+            if (!pause)
+                Pause();
+            else if (pause && options)
+                ExitOptions();
+            else
+                Continue();
         }
     }
 
@@ -38,6 +43,7 @@ public class GameControler : MonoBehaviour
         Time.timeScale = 0.0f;
         pauseMenu.SetActive(true);
         pause = true;
+        options = false;
     }
 
     public void Continue()
@@ -45,5 +51,29 @@ public class GameControler : MonoBehaviour
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
         pause = false;
+        options = false;
+    }
+
+    public void Options()
+    {
+        options = true;
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+
+    public void ExitOptions()
+    {
+        options = false;
+        pauseMenu.SetActive(true);
+        optionsMenu.SetActive(false);
+    }    
+
+    public void MainMenu()
+    {
+        options = false;
+        pause = false;
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
     }
 }
