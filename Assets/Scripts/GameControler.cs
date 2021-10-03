@@ -10,6 +10,9 @@ public class GameControler : MonoBehaviour
     public Transform playerSpawn;
     public GameObject player;
 
+    [Header("Hazards")]
+    public GameObject[] spawners;
+
     [Header("Menu")]
     public GameObject pauseMenu;
     public GameObject optionsMenu;

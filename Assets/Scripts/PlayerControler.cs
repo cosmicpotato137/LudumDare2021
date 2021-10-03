@@ -6,8 +6,13 @@ public class PlayerControler : MonoBehaviour
 {
     public float walkSpeed = 1.0f;
     public float deathRotation = 40;
+    public float deathForce = .5f;
+    public float fallDistance = .5f;
+    public float fallDelay = .3f;
     public Rigidbody2D torso;
-    public CircleCollider2D head;
+    public Rigidbody2D head;
+    public Transform leftFoot;
+    public Transform rightFoot;
     public bool dead = false;
 
     Animator anim;
@@ -41,14 +46,17 @@ public class PlayerControler : MonoBehaviour
                 idle = false;
             }
         }
-
-
-
     }
 
     private void FixedUpdate()
     {
-        if (torso.rotation > deathRotation || torso.rotation < -1 * deathRotation)
+        int layerMask = LayerMask.NameToLayer("Player");
+        RaycastHit2D left = Physics2D.Raycast((Vector2)leftFoot.position, new Vector2(0.0f, -1.0f), fallDistance, layerMask);
+        RaycastHit2D right = Physics2D.Raycast((Vector2)rightFoot.position, new Vector2(0.0f, -1.0f), fallDistance, layerMask);
+        if (!left || !right)
+            StartCoroutine(Fall());
+
+        if (Mathf.Abs(torso.rotation) > deathRotation || Mathf.Abs(head.rotation) > deathRotation)
             Die();
     }
 
@@ -56,6 +64,19 @@ public class PlayerControler : MonoBehaviour
     {
         dead = true;
         foreach (PlayerBalance b in balance)
-            b.enabled = false;
+            b.force = deathForce;
+    }
+
+    IEnumerator Fall()
+    {
+        yield return new WaitForSeconds(fallDelay);
+        Die();
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(leftFoot.position, new Vector3(0, -fallDistance, 0) + leftFoot.position);
+        Gizmos.DrawLine(rightFoot.position, new Vector3(0, -fallDistance, 0) + rightFoot.position);
     }
 }
