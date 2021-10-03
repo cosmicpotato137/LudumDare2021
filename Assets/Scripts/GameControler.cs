@@ -16,6 +16,7 @@ public class GameControler : MonoBehaviour
 
     bool pause = false;
     bool options = false;
+    GameObject playerInstance;
 
     // Start is called before the first frame update
     void Start()
@@ -23,13 +24,14 @@ public class GameControler : MonoBehaviour
         ExitOptions();
         Continue();
 
-        GameObject.Instantiate(player, playerSpawn);
+        SpawnPlayer(.5f);
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        // menu things
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!pause)
@@ -39,6 +41,10 @@ public class GameControler : MonoBehaviour
             else
                 Continue();
         }
+
+        // restart level
+        if (Input.GetKeyDown(KeyCode.R))
+            SpawnPlayer(0.0f);
     }
 
     public void Quit()
@@ -83,5 +89,17 @@ public class GameControler : MonoBehaviour
         pauseMenu.SetActive(false);
         optionsMenu.SetActive(false);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void SpawnPlayer(float seconds = 0.0f)
+    {
+        StartCoroutine(SpawnPlayerCo(seconds));
+    }
+
+    IEnumerator SpawnPlayerCo(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        if (playerInstance) Destroy(playerInstance);
+        playerInstance = Instantiate(player, playerSpawn);
     }
 }

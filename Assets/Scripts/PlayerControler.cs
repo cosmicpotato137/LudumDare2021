@@ -26,7 +26,6 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(balance.Length);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!idle)
@@ -43,27 +42,19 @@ public class PlayerControler : MonoBehaviour
             }
         }
 
+
+
     }
 
     private void FixedUpdate()
     {
         if (torso.rotation > deathRotation || torso.rotation < -1 * deathRotation)
-        {
             Die();
-        }
-
     }
 
     public void Die()
     {
         dead = true;
-        foreach (PlayerBalance b in balance)
-            b.enabled = false;
-    }
-
-    public void Live()
-    {
-        dead = false;
         foreach (PlayerBalance b in balance)
             b.enabled = false;
     }
