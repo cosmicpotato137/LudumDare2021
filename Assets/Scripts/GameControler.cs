@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameControler : MonoBehaviour
 {
+
+    [Header("Player")]
+    public Transform playerSpawn;
+    public GameObject player;
+
+    [Header("Menu")]
     public GameObject pauseMenu;
     public GameObject optionsMenu;
 
@@ -16,6 +22,8 @@ public class GameControler : MonoBehaviour
     {
         ExitOptions();
         Continue();
+
+        GameObject.Instantiate(player, playerSpawn);
     }
 
 
