@@ -7,6 +7,7 @@ public class DraggableObject : MonoBehaviour
     private Rigidbody2D rb;
 
     private Vector2 mouseOffset;
+    Transform previousParent;
 
     void Start()
     {
@@ -16,13 +17,14 @@ public class DraggableObject : MonoBehaviour
     private void OnMouseDown()
     {
         mouseOffset = rb.position - PhysicalMouse.instance.GetPos();
+        previousParent = transform.parent;
         transform.SetParent(PhysicalMouse.instance.transform);
         PhysicalMouse.instance.hj.connectedBody = rb;
     }
 
     private void OnMouseUp()
     {
-        transform.SetParent(null);
+        transform.SetParent(previousParent);
         PhysicalMouse.instance.hj.connectedBody = null;
     }
 }
