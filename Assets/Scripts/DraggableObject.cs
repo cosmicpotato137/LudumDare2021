@@ -5,15 +5,24 @@ using UnityEngine;
 public class DraggableObject : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public int dragSpeed = 10;
+
+    private Vector2 mouseOffset;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void OnMouseDrag(){
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-        rb.velocity = (mousePos - new Vector2(transform.position.x, transform.position.y)) * dragSpeed;
+    private void OnMouseDown()
+    {
+        mouseOffset = rb.position - PhysicalMouse.instance.GetPos();
+        transform.SetParent(PhysicalMouse.instance.transform);
+        PhysicalMouse.instance.hj.connectedBody = rb;
+    }
+
+    private void OnMouseUp()
+    {
+        transform.SetParent(null);
+        PhysicalMouse.instance.hj.connectedBody = null;
     }
 }
