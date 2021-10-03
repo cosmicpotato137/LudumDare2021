@@ -47,7 +47,6 @@ MonoBehaviour:
   hazard: {fileID: 5459987897660239314, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
   velocity: {x: -21.4, y: -3.12}
   spawnTrigger: {fileID: 2176729132293362254}
-  spawned: 0
 --- !u!1 &2989141514956328294
 GameObject:
   m_ObjectHideFlags: 0
