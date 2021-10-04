@@ -12,6 +12,7 @@ public class DraggableObject : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     private void OnMouseDown()
