@@ -20,7 +20,6 @@ public class PlayerControler : MonoBehaviour
 
     bool idle = false;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,18 +32,8 @@ public class PlayerControler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (!idle)
-            {
-                anim.speed = walkSpeed;
-                anim.SetBool("Idle", false);
-                idle = true;
-            }
-            else
-            {
-                anim.speed = 1.0f;
-                anim.SetBool("Idle", true);
-                idle = false;
-            }
+            anim.SetBool("Idle", false);
+            idle = false;
         }
     }
 

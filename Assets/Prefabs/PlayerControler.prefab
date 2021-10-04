@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551417551164567
 BoxCollider2D:
@@ -391,7 +391,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551417648883186
 BoxCollider2D:
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restingAngle: 0
-  force: 100
+  force: 150
 --- !u!114 &8977199417245470395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,7 +676,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551417760479301
 BoxCollider2D:
@@ -994,7 +994,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551418004215522
 BoxCollider2D:
@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restingAngle: 0
-  force: 100
+  force: 150
 --- !u!114 &6379024418941978400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,7 +1575,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551418345029783
 BoxCollider2D:
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restingAngle: 0
-  force: 100
+  force: 150
 --- !u!114 &2412500606539704733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,7 +1859,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551418454892402
 BoxCollider2D:
@@ -2044,7 +2044,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551418684036784
 BoxCollider2D:
@@ -2229,7 +2229,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551418705239958
 BoxCollider2D:
@@ -2412,7 +2412,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &6774551418821994782
 CircleCollider2D:
@@ -2563,7 +2563,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e2683e0c59589b4a83d773971b26338, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &6774551419149236829
 BoxCollider2D:
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restingAngle: 0
-  force: 100
+  force: 150
 --- !u!114 &3349717643836438624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f8ffe5bd47ddc45b473bf151daeea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1.3
+  walkSpeed: 1
   deathRotation: 15
   deathForce: 0
   fallDistance: 0.82
