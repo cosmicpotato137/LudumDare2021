@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5896424831434476322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.23316
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.767296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9626466
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.27076098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 31.419
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459987897660239314, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_Name
+      value: Trash Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257393430822837209, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e67d16c8ae6d43d6b17ca31b6c88b5e, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
