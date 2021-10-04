@@ -2672,6 +2672,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 229256230}
     m_Modifications:
+    - target: {fileID: 505235526593220859, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c4015d6da594b4727bac13e0973c0b43, type: 3}
     - target: {fileID: 1878433377355933424, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_Name
       value: Trash Can
@@ -2692,6 +2696,22 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.07736324
       objectReference: {fileID: 0}
+    - target: {fileID: 5179875438280485385, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.22999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179875438280485385, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179875438280485385, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.48999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5179875438280485385, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.78999996
+      objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2710,19 +2730,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9626466
+      value: 0.9997807
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.27076098
+      value: 0.0209424
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2734,7 +2754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7746986447470052400, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 31.419
+      value: 2.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a741e8d501245d99c0e20a1fb8b599, type: 3}
@@ -3038,6 +3058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7246531624077371743, guid: b5984bea77a7240b0ac6c973ee674b13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f7650b49e46a4d668d7c85d238c47f6, type: 3}
     - target: {fileID: 8756024769242111828, guid: b5984bea77a7240b0ac6c973ee674b13, type: 3}
       propertyPath: m_Name
       value: TV
