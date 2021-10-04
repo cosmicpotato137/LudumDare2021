@@ -1283,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2989141514674075081, guid: bbb7e0689b7474249a0ccd1514b62b96, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2989141514674075127, guid: bbb7e0689b7474249a0ccd1514b62b96, type: 3}
       propertyPath: velocity.x
