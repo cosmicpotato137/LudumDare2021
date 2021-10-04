@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6861f2464b43ef46ad94af8a909af2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpawn: {fileID: 0}
+  playerSpawn: {fileID: 7674875412410422314}
   player: {fileID: 6774551419273641565, guid: c90eec61885896a4a9bc10169d2f29a5, type: 3}
-  levelCompleteTrigger: {fileID: 0}
+  levelCompleteTrigger: {fileID: 3418997600984513549}
   levelComplete: 0
