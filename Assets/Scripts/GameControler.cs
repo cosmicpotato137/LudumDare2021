@@ -12,21 +12,12 @@ public class GameControler : MonoBehaviour
 
     [Header("Hazards")]
     public GameObject[] spawners;
-
-    [Header("Menu")]
-    public GameObject pauseMenu;
-    public GameObject optionsMenu;
-
-    bool pause = false;
-    bool options = false;
+    
     GameObject playerInstance;
 
     // Start is called before the first frame update
     void Start()
     {
-        ExitOptions();
-        Continue();
-
         SpawnPlayer(.5f);
     }
 
@@ -34,17 +25,6 @@ public class GameControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // menu things
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!pause)
-                Pause();
-            else if (pause && options)
-                ExitOptions();
-            else
-                Continue();
-        }
-
         // restart level
         if (Input.GetKeyDown(KeyCode.R))
             SpawnPlayer(0.0f);
@@ -55,44 +35,7 @@ public class GameControler : MonoBehaviour
         Application.Quit();
     }
 
-    public void Pause()
-    {
-        Time.timeScale = 0.0f;
-        pauseMenu.SetActive(true);
-        pause = true;
-        options = false;
-    }
 
-    public void Continue()
-    {
-        Time.timeScale = 1.0f;
-        pauseMenu.SetActive(false);
-        pause = false;
-        options = false;
-    }
-
-    public void Options()
-    {
-        options = true;
-        pauseMenu.SetActive(false);
-        optionsMenu.SetActive(true);
-    }
-
-    public void ExitOptions()
-    {
-        options = false;
-        pauseMenu.SetActive(true);
-        optionsMenu.SetActive(false);
-    }    
-
-    public void MainMenu()
-    {
-        options = false;
-        pause = false;
-        pauseMenu.SetActive(false);
-        optionsMenu.SetActive(false);
-        SceneManager.LoadScene("MainMenu");
-    }
 
     public void SpawnPlayer(float seconds = 0.0f)
     {
