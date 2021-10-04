@@ -20,12 +20,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.614264
+      value: 18.8716
       objectReference: {fileID: 0}
     - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.83931
+      value: 6.5381
       objectReference: {fileID: 0}
     - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
       propertyPath: m_LocalPosition.z
@@ -61,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5459987897660239314, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
       propertyPath: m_Name
-      value: TV
+      value: TV Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6257393430822837209, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
       propertyPath: m_Sprite
