@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2133918708537373462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.47150996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.52909094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.42999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.53999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 8.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600698029836034347, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.953648
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7457867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9611006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.27619883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203718844050968338, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 32.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459987897660239314, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_Name
+      value: AC_Hazard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257393430822837209, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f9f1d1ae37864e56a8ec8a06bb59cb6, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85ea11bfd7d9db84bafe56c5bf71e641, type: 3}
